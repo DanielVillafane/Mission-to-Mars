@@ -6,13 +6,13 @@ import pandas as pd
 import datetime as dt
 
 # Scrape_all function
-def scrape_all()
+def scrape_all():
 
 # Set up Splinter
-executable_path = {'executable_path': ChromeDriverManager().install()}
-browser = Browser('chrome', **executable_path, headless=False)
+    executable_path = {'executable_path': ChromeDriverManager().install()}
+    browser = Browser('chrome', **executable_path, headless=False)
 
- news_title, news_paragraph = mars_news(browser)
+    news_title, news_paragraph = mars_news(browser)
 
     # Run all scraping functions and store results in dictionary
     data = {
